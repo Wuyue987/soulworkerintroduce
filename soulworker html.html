@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+body{
+    background-image: url("SoulWorker_Background_01.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+/*首頁編輯*/
+.column{float: left;width: 100%;text-align: left;}
+@media screen and(max-width: 1000px){.column{width: 25%}}
+@media screen and(max-width: 600px){.column{width: 100%}}
+#topper{
+    height: 79px;
+	width:100%;
+}
+.bottom {position:relative;animation:animatebottom 0.4s}
+    @keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+#arinside{
+    margin: auto;
+    padding: 1em;
+    width: 15%;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+#arinside_2{
+    margin: auto;
+    padding: 1em;
+    width: 25%;
+    text-align: center;
+    position: relative;
+    float: right;
+}
+#arin1{
+    text-align: center;
+    position: relative;
+}
+#arin{
+    float: left;
+    width: 60%;
+    position: relative;
+}
+.data{
+    text-align: center;
+    font-family: DFKai-sb;
+    text-shadow: 2px 2px 5px;
+    line-height: 25px;
+    width: 50%;
+    margin-left: 5%;
+	padding: 1em;
+    background-color:#FFFFFF;
+    background-color:rgba(255,255,255,0.5);
+}
+.ulst{
+    list-style-type:none;
+	overflow:hidden;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	width:100%;
+    font-family: DFKai-sb;
+	background-image:url("particle2.gif");
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:rgba(0,152,50,0.7);padding: 1em;
+}
+.ulst1{
+    list-style-type:none;
+    overflow:hidden;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    opacity: 0.8;
+    font-family: DFKai-sb;
+}
+.list{
+	float:left;
+}
+.list1{
+    float: left;
+    padding:8px 16px;
+    width:auto;
+    border:none;
+    outline:0;
+    display: inline;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active){background-color: #111;}
+.active{background-color:#111;}
+/*遊戲特色編輯*/
+.data1{
+    text-align: center;
+    font-family: DFKai-sb;
+    text-shadow: 2px 2px 5px;
+    line-height: 25px;
+    width: 50%;
+    margin-left: 5%;
+    padding: 1em;
+    background-color:#0066FF;
+    opacity: 0.8;
+}
+#spback{
+    position: relative;
+    width: 100%;
+}
+#spleft,#spright{
+    position: relative;
+    width: 50%;
+    float: left;
+}
+
+.fonts1{
+    font-family: DFKai-sb;
+    position: relative;
+    text-shadow: 2px 2px 5px #000000;
+    padding: 1em;
+    color: #FFFFFF;
+}
+/*世界觀編輯*/
+#worldside{
+    float: left;
+    text-align:center;
+    padding: 1em;
+    position: relative;
+    margin: auto;
+}
+/*人物編輯*/
+#divri,#divri1,#divri2,#divri3,#divri4,#divri5{
+    position: relative;
+    width: 50%;
+    float: left;
+}
+#harus,#erwins,#lilys,#stellas,#jins,#iriss{
+    width: 35%;
+    position: relative;
+    float: left;
+}
+#harus1,#erwins1.#lilys1,#stellas1,#jins1,#iriss1{
+    width: 65%;
+    position: relative;
+    float: left;
+}
+#haruri,#erwinri,#lilyri,#stellari,#jinri,#irisri{
+    position: relative;
+    width: 20%;
+    float: left;
+}
+#haruri1,#erwinri1,#lilyri1,#stellari1,#jinri1,#irisri1{
+    position: relative;
+    width: 80%;
+    float: left;
+}
+
+.harile{
+    float: left;
+    font-family: DFKai-sb;
+    text-shadow: 2px 2px 5px #000000;
+}
+.divst{
+    width: 50%;
+    float: left;
+}
+.chfont{
+    font-family: DFKai-sb;
+    position: absolute;
+    font-size: 80%;
+}
+.fonts{
+    font-family: DFKai-sb;
+    position: absolute;
+    text-shadow: 2px 2px 5px #000000;
+    padding: 1em;
+    color: #FFFFFF;
+}
+.riri{
+    float: right;
+    padding: 1em;
+    position: absolute;
+}
+.ulst2{
+    list-style-type:none;
+    overflow:hidden;
+    position: relative;
+    list-style: none;
+    margin: 1em;
+    padding: 1em;
+    opacity: 0.8;
+    font-family: DFKai-sb;
+}
+.ulst3{
+    list-style-type:none;
+    overflow:hidden;
+    list-style: none;
+    margin: 1em;
+    padding: 1em;
+    opacity: 0.8;
+    font-family: DFKai-sb;
+}
+.lists{
+    margin: 0.5em;
+    padding: 0.5em;
+}
+</style>
+<head>
+    <link rel="icon" href="soulworker_dock_icon_by_seraphna-dc54cwu.png" type="image/ico" />
+    <title>【SoulWoker】靈魂行者</title>
+</head>
+<body>
+<div id="back">
+    <!--首頁-->
+ <div id="topper">
+  <ul class="ulst">
+    <li class="list"><a class="active tablink" onclick="openlink(event,'airticle')">首頁</a></li>
+    <li class="list"><a class="active tablink" onclick="openlink(event,'special')">遊戲特色</a></li>
+    <li class="list"><a class="active tablink" onclick="openlink(event,'world')">世界觀</a></li>
+    <li class="list"><a class="active tablink" onclick="openlink(event,'chin')">人物介紹</a></li>
+  </ul>
+ </div>
+
+    <div id="airticle" class="bottom title column">
+        <div id="arinside" class="column">
+               <br>
+                 <a href="https://www.facebook.com/SoulWorkerTW"><img src="logo-facebook-rund.png" width="103px" height="103px"></a>
+               <br>
+               <a href="https://forum.gamer.com.tw/A.php?bsn=21911"><img src="bahamut logo.png" width="103px" height="103px"></a>
+               <br>
+               <a href="https://www.youtube.com/watch?v=sB3lIJJEBFg&index=1&list=PLR-1cd-rUr9tlcdnVbNg_cn9Q-tKJEeR6"><img src="youtube.png" width="103px" height="103px"></a>
+               <br>
+               <br>
+                <a href="https://event.wasabii.com.tw/sw/181108_cover/index.html"><img src="logo in.png" width="131px" height="68px"></a>
+        </div>
+       <div id="arin" class="column">
+         <div>
+           <br>
+           <h1 class="data">【Game】SoulWorker</h1>
+           <br>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/Oz_M_mQYyHk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <br>
+              <p class="data">《靈魂行者》是以世紀末為背景的動漫風格線上角色扮演遊戲，透過靈魂發現擁有不凡力量的少男少女,為了人類存亡賭上自身命運加入戰鬥,這款結合動漫風格,特殊戰鬥玩法等特點於一身的佳作帶給台灣的玩家,細膩的手繪動漫風格在線上遊戲的領域更是獨樹一幟</p>
+         <br>
+         </div>
+       </div>
+       <div id="arinside_2" class="column">
+        <img src="Lux.gif" width="119px" height="131px">
+        <br>
+        <div class="fonts">
+        <p>版主:WuYue</p>
+        <p>遊玩「靈魂行者」這款遊戲有一陣子了,雖然自從公測(2017年9月底)開始不到2個月就暫時退坑,直至7月中(2018年)時,心血來潮的返回遊玩此遊戲,真心覺得這款遊戲十分的有戰鬥爽快感,加上一點點的操作技術,所以想介紹這款遊戲給大家,以下是我的一些簡易資訊.</p>
+        <ul class="ulst1">
+            <p>遊戲內角色資訊</p>
+            <img src="Luxifana.jpg">
+            <img src="Luxifa.jpg">
+            <img src="Luciyana.jpg">
+            <img src="Luxio.jpg">
+            <img src="Luxina.jpg">
+        </ul>
+        </div>
+       </div>
+
+
+    </div>
+    <!--遊戲特色-->
+
+    <div id="special" class="bottom title column" style="display: none">
+        <div id="spleft" class="column">
+           <div class="fonts1">
+            <p class="data1">動漫風格渲染 如同置身在動畫之中</p>
+            <p>遊戲擁有即時動畫,讓玩家能夠感同身受,欣賞遊戲內的劇情故事,華麗的特效效果。</p>
+            <img src="anime style.jpg" width="226px" height="128px">
+            <p class="data1">一鍵施放技能</p>
+            <p>透過自由編排的技能按鍵,戰鬥時只需要按一個按鈕(總共6排),便可以很輕鬆地施放技能組合,打出自己想要的一套攻擊方式。</p>
+            <img src="skill system.jpg" width="226px" height="128px">
+            <p class="data1">獨特小屋系統</p>
+            <p>擁有個人的休息掛機場所,也可以邀請網友們來聊天~</p>
+            <img src="home system.JPG" width="213px" height="126px">
+            <p class="data1">回憶系統</p>
+            <p>副本內的搜尋道具,前提是開通每一關卡的第一章節,此功能才會被開啟,蒐集到指定數目道具,可領取時裝設計圖。</p>
+            <img src="memories system.jpg" width="184px" height="156px">
+            <br>
+            <br>
+            <p>相關資料來源</p>
+            <a href="http://sw.wasabii.com.tw/features.shtml">台服遊戲官網</a>
+            <a href="https://acg.gamer.com.tw/acgDetail.php?s=53625">巴哈姆特版上電玩資訊</a>
+          </div>
+        </div>
+        <div id="spright" class="fonts1 column">
+           <div class="fonts1">
+            <p class="data1">AR卡片系統</p>
+            <p>在技能裡面增加AR卡片,提升角色能力,加速副本通關率。</p>
+            <img src="AR艾歐.gif" width="200px" height="86px">
+            <p>*上圖為AR卡相關NPC</p>
+            <br>
+            <br>
+            <img src="AR system.JPG" width="160px" height="123px">
+            <p>*上圖為AR卡管理介面版</p>
+            <p class="data1">角色外觀系統</p>
+            <p>角色的一些樣式可以自由地變換,已購買過的樣式可以永久使用,外型自行做搭配</p>
+            <img src="外觀system.png" width="226px" height="208px">
+            <p class="data1">特殊代幣系統</p>
+            <p>遊戲內有個非常特殊的道具"浣熊幣"</p>
+            <img src="浣熊幣.png">這項道具可以去找特定NPC兌換道具
+            <img src="浣熊商店.jpg" width="94px" height="110px">
+           </div>
+        </div>
+    </div>
+
+    <!--世界觀-->
+    <div id="world" class="bottom title column" style="display: none">
+       <div class="w3-sidebar w3-bar-block w3-black w3-card ulst1" style="width:130px">
+        <button class="w3-bar-item w3-button tablink1" onclick="openworld(event, '1')">第一章</button>
+        <button class="w3-bar-item w3-button tablink1" onclick="openworld(event, '2')">第二章</button>
+        <button class="w3-bar-item w3-button tablink1" onclick="openworld(event, '3')">第三章</button>
+        <button class="w3-bar-item w3-button tablink1" onclick="openworld(event, '4')">第四章</button>
+       </div>
+       <div style="margin-left:130px" style="display: none;">
+            <div id="1" class="w3-container world1 w3-animate-left" style="display:none">
+                <img src="SW01.jpg">
+            </div>
+            <div id="2" class="w3-container world1 w3-animate-left" style="display:none">
+                <img src="SW02.jpg">
+            </div>
+            <div id="3" class="w3-container world1 w3-animate-left" style="display:none">
+                <img src="SW03.jpg">
+            </div>
+            <div id="4" class="w3-container world1 w3-animate-left" style="display:none">
+                <img src="SW04.jpg">
+            </div>
+        </div>
+    </div>
+    <!--人物介紹-->
+    <div id="chin" class="bottom title column" style="display: none">
+       <div class="w3-sidebar w3-bar-block w3-black w3-card chfont" style="width:130px">
+        <button class="w3-bar-item w3-button tablink2" onclick="opench(event, 'haru')">哈露‧伊絲提亞</button>
+        <button class="w3-bar-item w3-button tablink2" onclick="opench(event, 'erwin')">歐文‧阿克萊特</button>
+        <button class="w3-bar-item w3-button tablink2" onclick="opench(event, 'lily')">莉莉‧普露梅茜</button>
+        <button class="w3-bar-item w3-button tablink2" onclick="opench(event, 'stella')">史黛拉‧優妮貝爾</button>
+        <button class="w3-bar-item w3-button tablink2" onclick="opench(event, 'jin')">金‧希帕斯</button>
+        <button class="w3-bar-item w3-button tablink2" onclick="opench(event, 'iris')">伊莉絲‧悠娜</button>
+       </div>
+       <div style="margin-left:130px" style="display: none;">
+            <div id="haru" class="w3-container ch w3-animate-left fonts" style="display:none">
+                <div class="divst">
+                <img src="W-haru.png" width="200px" height="250px">
+                <br>
+                <p>「復仇靈劍」哈露 ‧ 伊絲提亞
+                    <br>
+                    年齡:17
+                    <br>
+                    哈露是位恬靜、亭亭玉立的 17 歲女高中生，內心缺乏自信，遇到困難會有些膽怯，但一旦碰上有人傷害他人，她激烈的憤怒感將會具現化，尤其是遇到需要保護的對象就會激發潛力，表現出十足幹勁的樣子。哈露年幼喪父，與母親相依為命的她跟母親感情非常要好，但異生物入侵時，母親被遭破壞的建築物困住而氣絕身亡，令哈露悲痛欲絕，就此踏上對抗邪惡勢力的正義之路。
+                    <br>
+                    哈露屬於近距離戰鬥平衡型的角色，使用的武器為「靈魂大劍」，揮舞手中的大劍，可以將怪物擊飛至空中，並使用追擊技能在空中戰鬥，利用攻防一體的特性壓制敵人，是非常適合初學者進行的角色。
+                </p>
+                <div id="harus">
+                <ul class="ulst2">主動技能展示
+                    <li class="lists"><img src="haruskill1-1.PNG">迅極劍技</li>
+                    <li class="lists"><img src="haruskill1-2.PNG">神速</li>
+                    <li class="lists"><img src="haruskill1-3.PNG">盤旋劍</li>
+                    <li class="lists"><img src="haruskill2-1.PNG">能量增益</li>
+                    <li class="lists"><img src="haruskill2-2.PNG">顫慄碎片</li>
+                    <li class="lists"><img src="haruskill2-3.PNG">劍之圍籬</li>
+                    <li class="lists"><img src="haruskill3-1.PNG">淬火猛擊</li>
+                    <li class="lists"><img src="haruskill3-2.PNG">地崩山摧</li>
+                    <li class="lists"><img src="haruskill3-3.PNG">戰神降臨</li>
+                    <li class="lists"><img src="haruskill4-1.PNG">閃光律動</li>
+                    <li class="lists"><img src="haruskill4-2.PNG">灼熱焚斬</li>
+                    <li class="lists"><img src="haruskill4-3.PNG">破空拔刀斬</li>
+                    <li class="lists"><img src="haruskill5-1.PNG">劍雨</li>
+                </ul>
+                </div>
+                <div id="harus1">
+                    <ul class="ulst3">技能特性展示
+                        <li class="lists">特性:<img src="haruskill1-1-1.PNG">迅極劍技-範圍增加</li>
+                        <li class="lists">特性:<img src="haruskill1-2-1.PNG">迴旋斬<img src="haruskill1-2-2.PNG">升龍斬</li>
+                        <li class="lists">特性:<img src="haruskill2-2-1.PNG">顫慄碎片-暈眩</li>
+                        <li class="lists">特性:<img src="haruskill3-2-1.PNG">地崩山摧-攻擊次數增加<img src="haruskill3-2-2.PNG">地崩山摧-範圍增加</li>
+                        <li class="lists">特性:<img src="haruskill3-3-1.PNG">戰神降臨-時間增加<img src="haruskill3-3-2.PNG">戰神降臨-暈眩</li>
+                        <li class="lists">特性:<img src="haruskill4-2-1.PNG">灼熱焚斬-火焰</li>
+                        <li class="lists">特性:<img src="haruskill4-3-1.PNG">破空拔刀斬-蓄力</li>
+                    </ul>
+                </div>
+                </div>
+                <div id="divri">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YNJuLczf3vQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <br>
+                    <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/66Nn7QgAP1A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div id="haruri" class="riri">
+                       <img src="HaruSelect.png" width="97px" height="280px">
+                    </div>
+                    <div id="haruri1" class="harile">
+                    <p>遊玩心得:
+                        <br>
+                        這支角色是我最愛玩的角色,從以前到現在最喜歡玩近戰角色,而且又是拿帥氣的大劍~雖然基本能力數值算普普,也沒有什麼能力特別強,唯一擁有的優勢是,他的掃圖技能非常的強,搭配AR卡的使用,也可以變成隊伍中的強力輸出;還沒二轉前不是特別喜愛,但自從看到韓版更新晉升二轉時,變得更加喜愛這隻角色,角色變為長髮,加上背後多了一把劍,變成帥氣的二刀流~技能也是變得越來越炫麗,所以玩的特別有心得~
+                    </p>                      
+                    </div>
+                </div>
+            </div>
+            <div id="erwin" class="w3-container ch w3-animate-left fonts" style="display:none">
+                <div class="divst">
+                <img src="W-erwin.png" width="175px" height="250px">
+                <p>「爵士雙槍」歐文 ‧ 阿克萊特
+                    <br>
+                    年齡:18
+                    <br>
+                    歐文是個絕頂聰明的 18 歲天才少年，個性樂觀陽光，做什麼事情都超有自信，讓人感覺不太正經。從小便已經得知自己非凡才能的他，看其他的人事物都覺得很愚蠢，自認即使自己不用太努力，也可以走到大家無法觸及的地方。歐文的聰明絕頂讓他對許多事物都不感興趣，找不到人生目標。直到在電視上看到異生物入侵的那一天，由於這個事件已超越歐文自我的認知，他像是被什麼東西給迷上一般，帶著探索及好奇的心，毫不猶豫的就向「虛空」前進。
+                    <br>
+                    歐文屬於遠距離混合傷害型的角色，使用的武器為「靈魂雙槍」，能利用不同的子彈組合方式，可以給予怪物燒傷、破壞盔甲等減益效果，近距離可利用踢技或是近距離射擊給予對手大量的傷害，對於喜愛操控性的玩家來說是一個可以獲得許多成就感的角色。
+                </p>
+                <div id="erwins">
+                <ul class="ulst2">主動技能展示
+                    <li class="lists"><img src="erwinskill1-1.PNG">飛升</li>
+                    <li class="lists"><img src="erwinskill1-2.PNG">漫遊射擊</li>
+                    <li class="lists"><img src="erwinskill1-3.PNG">回轉連射</li>
+                    <li class="lists"><img src="erwinskill2-1.PNG">後撤</li>
+                    <li class="lists"><img src="erwinskill2-2.PNG">弱點鎖定</li>
+                    <li class="lists"><img src="erwinskill2-3.PNG">集中射擊</li>
+                    <li class="lists"><img src="erwinskill3-1.PNG">死亡綻放</li>
+                    <li class="lists"><img src="erwinskill3-2.PNG">電磁步槍</li>
+                    <li class="lists"><img src="erwinskill3-3.PNG">脈衝炸彈</li>
+                    <li class="lists"><img src="erwinskill4-1.PNG">燃燒彈</li>
+                    <li class="lists"><img src="erwinskill4-2.PNG">加速彈</li>
+                    <li class="lists"><img src="erwinskill4-3.PNG">光子護盾</li>
+                    <li class="lists"><img src="erwinskill5-1.PNG">靈魂堡壘</li>
+                </ul>
+                </div>
+                <div id="erwins1">
+                    <ul class="ulst3">技能特性展示
+                        <li class="lists">特性:<img src="erwinskill1-1-1.PNG">衝擊彈<img src="erwinskill1-1-2.PNG">空中連射</li>
+                        <li class="lists">特性:<img src="erwinskill1-3-1.PNG">回轉連射-穿透</li>
+                        <li class="lists">特性:<img src="erwinskill2-1-1.PNG">後撤-減速煙幕<img src="erwinskill2-1-2.PNG">後撤-毒霧</li>
+                        <li class="lists">特性:<img src="erwinskill2-3-1.PNG">集中射擊-麻痺射擊<img src="erwinskill2-3-2.PNG">集中射擊-黑洞</li>
+                        <li class="lists">特性:<img src="erwinskill3-2-1.PNG">電磁步槍-穿甲</li>
+                        <li class="lists">特性:<img src="erwinskill4-2-1.PNG">加速彈-靈魂值恢復</li>
+                    </ul>
+                </div>
+                </div>
+                <div id="divri1">
+                       <iframe width="560" height="315" src="https://www.youtube.com/embed/cwEaDfHBj9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div>
+                       <iframe width="560" height="315" src="https://www.youtube.com/embed/Wv1rB9K2xGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div id="erwinri" class="riri">
+                       <img src="ErwinSelect.png" width="97px" height="280px">
+                    </div>
+                    <div id="erwinri1">
+                       <p>遊玩心得:
+                           <br>
+                           遊戲內少有的男角色,手持雙槍,看似遠攻的角色,但我玩起來的實際射程並沒有那麼遠,技能除外,普通攻擊,也是貼怪貼得很近,畢竟這款遊戲是採無雙類型的,而且這隻擁有不錯的攻擊速度,打起來會有種快感,施放技能的速度,流暢性等都不錯~
+                       </p>                      
+                    </div>    
+                </div>
+            </div>
+            <div id="lily" class="w3-container ch w3-animate-left fonts" style="display:none">
+                <div class="divst">
+                <img src="W-lily.png" width="200px" height="315px">
+                <p>「狂嵐之鐮」莉莉 ‧ 普露梅茜
+                    <br>
+                    年齡:15
+                    <br>
+                    出生於大富豪之家的莉莉，在無論做什麼都會被容許的環境中長大，個性傲慢，甚至有輕視他人的態度。由於父母的漠不關心，莉莉非常依賴年紀相仿、在貧民窟出生被富豪收為義子的哥哥，無論什麼事都以哥哥為優先。與哥哥的生活充滿了幸福，在莉莉想著「能一直持續下去就好了」時，異生物突然入侵，莉莉眼睜睜看著哥哥在她面前被異生物吞食卻無能為力，痛失親人的她因過於無法接受這樣的殘酷，發出令人不寒而慄的大笑後，像是復仇般的走向那個危險的「虛空」。親人的慘死讓她性情大變，遇到危險的時候將會轉換成較為暴戾的性格，神情也會變得瘋狂。
+                    <br>
+                    莉莉屬於近距離高速敏捷型的角色，戰鬥風格較為突出，使用的武器為「靈魂巨鐮」，可使用鎖鏈將怪物綑綁並拉近距離，再使用鐮刀進行高速切割，還能利用大量的位移技能閃躲怪物的攻擊並製造反擊的機會，用華麗的攻擊以阻殺敵人，是喜愛近距離博鬥的玩家最好的選擇。
+                </p>
+                <div id="lilys">
+                <ul class="ulst2">主動技能展示
+                    <li class="lists"><img src="lilyskill1-1.png">施虐</li>
+                    <li class="lists"><img src="lilyskill1-2.png">猛攻</li>
+                    <li class="lists"><img src="lilyskill1-3.png">挑刺</li>
+                    <li class="lists"><img src="lilyskill2-1.png">鮮血收割</li>
+                    <li class="lists"><img src="lilyskill2-2.png">死亡枷鎖</li>
+                    <li class="lists"><img src="lilyskill2-3.png">鎖魂飛鐮</li>
+                    <li class="lists"><img src="lilyskill3-1.png">絞殺</li>
+                    <li class="lists"><img src="lilyskill3-2.png">鬼神亂舞</li>
+                    <li class="lists"><img src="lilyskill3-3.png">奪魂之割</li>
+                    <li class="lists"><img src="lilyskill4-1.png">極戰怒吼</li>
+                    <li class="lists"><img src="lilyskill4-2.png">湮滅龍捲</li>
+                    <li class="lists"><img src="lilyskill4-3.png">三重裂碎</li>
+                    <li class="lists"><img src="lilyskill5-1.png">終焉斷頭台</li>
+                </ul>
+                </div>
+                <div id="lilys1">
+                    <ul class="ulst3">技能特性展示
+                        <li class="lists">特性:<img src="lilyskill1-3-1.png">挑刺-蓄力</li>
+                        <li class="lists">特性:<img src="lilyskill2-1-1.png">生命虹吸</li>
+                        <li class="lists">特性:<img src="lilyskill2-2-1.png">死亡枷鎖-範圍增加</li>
+                        <li class="lists">特性:<img src="lilyskill2-3-1.png">召喚死神<img src="lilyskill2-3-2.png">漩渦</li>
+                        <li class="lists">特性:<img src="lilyskill3-2-1.png">鬼神亂舞-貫率增加<img src="lilyskill3-2-2.png">鬼神亂舞-暴率增加</li>
+                        <li class="lists">特性:<img src="lilyskill4-2-1.png">湮滅龍捲-追蹤<img src="lilyskill4-2-2.png">湮滅龍捲-廣域</li>
+                    </ul>
+                </div>
+                </div>
+                <div id="divri2">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/S0_wjArdNQ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nda_g8mB-Ow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div id="lilyri" class="riri">
+                       <img src="LilySelect.png" width="97px" height="280px">
+                    </div>
+                    <div id="lilyri1">
+                       <p>遊玩心得:
+                           <br>
+                           在公測時看到拿鐮刀武器的角色,有著不錯的傷害跟暴擊率跟暴擊傷害,攻擊範圍也算是廣,算是輸出高型的角色,但是我自己本身就沒有把這隻角色練到很高等,所以也不知道說啥好,但在遊戲裡面卻看到很多人玩這支角色,防禦不算太高,不小心沒控制好,會很容易躺地板。
+                       </p>                      
+                    </div>
+                </div>
+            </div>
+            <div id="stella" class="w3-container ch w3-animate-left fonts" style="display:none">
+                <div class="divst">
+                <img src="W-stella.png" width="150px" height="206px">
+                <p>
+                    「悲鳴吉他」史黛拉 ‧ 優妮貝爾
+                    <br>
+                    年齡:14
+                    <br>
+
+                    天生具有靈異體質而遭眾人排擠，最後連父母都捨棄她，唯一值得慶幸的是，一般人看不見的靈獸感應到她的孤獨，一直在她身邊陪伴。當外星異生物入侵事件發生時，「史黛菈」被無知民眾視為帶來災禍的不祥之人，無情的向她丟石頭攻擊，「史黛菈」此時絕望的走上前往「虛空」的道路。
+                    <br>
+                    「史黛菈」所使用的武器為「悲鳴吉他」，屬於廣範圍輔助型角色，她彈奏出不同的樂章來招喚週圍的靈獸，進行攻擊敵人或治癒的效果。因為需要同時進行攻擊及治癒，所以是一個需要一定程度操作技巧的角色。
+　　　　　　　　　</p>
+                    <div id="stellas">
+                <ul class="ulst2">主動技能展示
+                    <li class="lists"><img src="stellaskill1-1.png">旋轉舞步</li>
+                    <li class="lists"><img src="stellaskill1-2.png">幽魂解放</li>
+                    <li class="lists"><img src="stellaskill1-3.png">困擾傳遞</li>
+                    <li class="lists"><img src="stellaskill2-1.png">狂烈衝擊</li>
+                    <li class="lists"><img src="stellaskill2-2.png">野獸遊行</li>
+                    <li class="lists"><img src="stellaskill2-3.png">紫珠遊戲</li>
+                    <li class="lists"><img src="stellaskill3-1.png">閃電鏈</li>
+                    <li class="lists"><img src="stellaskill3-2.png">靈魂尖嘯</li>
+                    <li class="lists"><img src="stellaskill3-3.png">黑洞拉力</li>
+                    <li class="lists"><img src="stellaskill4-1.png">野獸狂歡</li>
+                    <li class="lists"><img src="stellaskill4-2.png">混沌沼澤</li>
+                    <li class="lists"><img src="stellaskill4-3.png">完美節拍</li>
+                    <li class="lists"><img src="stellaskill5-1.png">貝斯音波</li>
+                </ul>
+                </div>
+                <div id="stellas1">
+                    <ul class="ulst3">技能特性展示
+                        <li class="lists">特性:<img src="stellaskill1-2-1.png">幽魂解放-攻擊次數增加</li>
+                        <li class="lists">特性:<img src="stellaskill1-3-1.png">困擾傳遞-範圍增加<img src="stellaskill1-3-2.png">困擾傳遞-強化</li>
+                        <li class="lists">特性:<img src="stellaskill2-1-1.png">狂怒衝擊-攻擊次數增加</li>
+                        <li class="lists">特性:<img src="stellaskill2-3-1.png">紫珠遊戲-麻痺<img src="stellaskill2-3-2.png">紫珠遊戲-強化</li>
+                        <li class="lists">特性:<img src="stellaskill3-1-1.png">閃電鏈-時間增加<img src="stellaskill3-1-2.png">閃電鏈-射程增加</li>
+                        <li class="lists">特性:<img src="stellaskill3-3-1.png">黑洞拉力-範圍增加</li>
+                        <li class="lists">特性:<img src="stellaskill4-2-1.png">混沌沼澤-威力增加</li>
+                    </ul>
+                </div>
+                </div>
+                    <div id="divri3">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/JQ9KE93KNrg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div>
+                       <iframe width="560" height="315" src="https://www.youtube.com/embed/g4U7zdbuTk8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div id="stellari" class="riri">
+                       <img src="StellaSelect.png" width="97px" height="280px">
+                    </div>
+                    <div id="stellari1">
+                       <p>遊玩心得:
+                           <br>
+                           很多人玩這遊戲都是因為她!!!因為她是可愛的蘿莉,真的非常的萌,不過這隻角色玩起來的操作技巧要非常的好,上手難度很高,也是這遊戲唯一的補師,可以切換攻擊型態與支援型態(右鍵切換),前期要單刷副本挺困難的,因為輸出不是很高,攻速慢,容易吃到傷害,總而言之,我玩起來就是不太順手,真心覺得操作難度最高的角色。
+                       </p>                      
+                    </div>
+                    </div>
+            </div>
+            <div id="jin" class="w3-container ch w3-animate-left fonts" style="display:none">
+                <div class="divst">
+                <img src="W-jin.png" width="182px" height="294px">
+                <p>「正義之拳」金 ‧ 希帕斯
+                    <br>
+                    年齡:17
+                    <br>
+                       金是一位耿直又誠實的熱血男孩，擁有絕對的正義感，從小便接受格鬥訓練，以格鬥家作為目標，相當尊敬自己的導師。在誓言守護的人遭受「虛空」攻擊而犧牲後，強烈的自責感成為他心中難以抹滅的傷痕。虛空事件幾個月過去了，失去目標的金加入了救援隊，拜長期的格鬥訓練所賜，金的好身手拯救了很多民眾，同時也受到民眾受到激勵，那個成為格鬥家的夢想又在心中燃起微小的火苗。但隨著世界被破壞的程度加劇，需要救援的民眾越來越多，金也離夢想越來越遠，他漸漸開始感到疲乏，不禁激起想對虛空報復的心，為了挽救世界的所有人，他不顧一切往「虛空」衝去。
+                       <br>
+                       金屬於近距離技巧型的角色，使用的武器為「靈魂護手」，一開始會施展輕型的拳腳連續攻擊，以累積能量，最後以爆發的姿態反擊對手，在對戰中也有著「承擔敵方攻擊的坦克」功能，是屬於需要熟練操作的角色。
+                </p>
+                <div id="jins">
+                <ul class="ulst2">主動技能展示
+                    <li class="lists"><img src="jinskill1-1.png">至高榮耀</li>
+                    <li class="lists"><img src="jinskill1-2.png">完美組合</li>
+                    <li class="lists"><img src="jinskill1-3.png">重錘踢擊</li>
+                    <li class="lists"><img src="jinskill2-1.png">反擊</li>
+                    <li class="lists"><img src="jinskill2-2.png">靈魂浪湧</li>
+                    <li class="lists"><img src="jinskill2-3.png">重力翻轉</li>
+                    <li class="lists"><img src="jinskill3-1.png">精神爆發</li>
+                    <li class="lists"><img src="jinskill3-2.png">精神射擊</li>
+                    <li class="lists"><img src="jinskill3-3.png">火球彈</li>
+                    <li class="lists"><img src="jinskill4-1.png">重型爆震</li>
+                    <li class="lists"><img src="jinskill4-2.png">融合裝甲</li>
+                    <li class="lists"><img src="jinskill4-3.png">終末之拳</li>
+                    <li class="lists"><img src="jinskill5-1.png">毀滅之拳</li>
+                </ul>
+                </div>
+                <div id="jins1">
+                    <ul class="ulst3">技能特性展示
+                        <li class="lists">特性:<img src="jinskill1-1-1.png">擊倒攻擊<img src="jinskill1-1-2.png">上昇攻擊</li>
+                        <li class="lists">特性:<img src="jinskill2-1-1.png">反擊-暈眩<img src="jinskill2-1-2.png">反擊-霸體破壞</li>
+                        <li class="lists">特性:<img src="jinskill2-2-1.png">靈魂浪湧-強化</li>
+                        <li class="lists">特性:<img src="jinskill2-3-1.png">衝擊波</li>
+                        <li class="lists">特性:<img src="jinskill3-1-1.png">氣功彈<img src="jinskill3-1-2.png">寸勁</li>
+                        <li class="lists">特性:<img src="jinskill3-3-1.png">火焰彈-數量增加</li>
+                        <li class="lists">特性:<img src="jinskill4-1-1.png">重型爆震-數量增加</li>
+                    </ul>
+                </div>
+                </div>
+                    <div id="divri4">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pi7L-9Qpnig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YS6C0-T34t4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div id="jinri" class="riri">
+                       <img src="JinSelect.png" width="97px" height="280px">
+                    </div>
+                    <div id="jinri1">
+                       <p>遊玩心得:
+                           <br>
+                           第二支男角色,他是這款遊戲裡的坦克,有著流暢的攻擊節奏,而且有著反擊這項技能,雖說他是坦克,但也有著不錯的輸出;自己玩起來特別有流暢性,技能搭配反擊使用起來相當的順手,技能內也有短暫無敵效果,且可以buff給隊友,讓隊友也有短暫無敵效果,整體來說,操作手感很好~~也很容易上手,主要是需要練習反擊的使用時機,畢竟有些技能搭配反擊,輸出效果非常的好。
+                       </p>                      
+                    </div>
+                    </div>
+            </div>
+            <div id="iris" class="w3-container ch w3-animate-left fonts" style="display:none">
+                <div class="divst">
+                <img src="1032px-W-Iris.png" width="206px" height="180px">
+                <p>「憤怒之槌」伊莉絲 ‧ 悠娜
+                    <br>
+                    年齡:18
+                    <br>
+                    她是個極有個性的女孩，來自一個有聲望的家庭，自從出生的那一日起，父母就安排好從小到大的道路，他們希望「伊莉絲．悠娜」可以向他姊姊一樣乖巧聽話。但「伊莉絲．悠娜」從不想這麼規矩的生活，他只想自己決定自己的未來及命運。有一天目睹同學被欺負，「伊莉絲．悠娜」毫不猶豫地阻止對方的霸凌，但以暴制暴的方式反而被叫到訓導處，她的老師通知了家長。她的母親知道後憤怒地給伊麗絲一個耳光並道「妳為什麼不能像妳的姊姊呢？」，「伊莉絲．悠娜」準備離家出走，不久她聽見了警報聲，虛空來臨了，虛空摧毀了一切，也毀滅了她的家。「伊莉絲．悠娜」失去了一切，眼神裡充滿憤怒，準備毀壞阻擋在她眼前的所有事物。
+                    <br>
+                    由於「伊莉絲．悠娜」的故事背景，在遊戲中她將是個能夠透過憤怒表現出不同能力的女孩，屬於中距離暴力型角色，善於破壞霸體及全面範圍傷害，但攻擊速度緩慢，是屬於需要熟練操作的角色。
+                </p>
+                <div id="iriss">
+                <ul class="ulst2">主動技能展示
+                    <li class="lists"><img src="irisskill1-1.png">破壞之槌</li>
+                    <li class="lists"><img src="irisskill1-2.png">螺旋飛舞</li>
+                    <li class="lists"><img src="irisskill1-3.png">府衝突擊</li>
+                    <li class="lists"><img src="irisskill2-1.png">火焰翻滾</li>
+                    <li class="lists"><img src="irisskill2-2.png">漩渦突刺</li>
+                    <li class="lists"><img src="irisskill2-3.png">脈衝之焰</li>
+                    <li class="lists"><img src="irisskill3-1.png">限界解除</li>
+                    <li class="lists"><img src="irisskill3-2.png">子彈風暴</li>
+                    <li class="lists"><img src="irisskill3-3.png">全力爆發</li>
+                    <li class="lists"><img src="irisskill4-1.png">永恆深淵</li>
+                    <li class="lists"><img src="irisskill4-2.png">地震</li>
+                    <li class="lists"><img src="irisskill4-3.png">電脈加農</li>
+                    <li class="lists"><img src="irisskill5-1.png">極致驅動</li>
+                </ul>
+                </div>
+                <div id="iriss1">
+                    <ul class="ulst3">技能特性展示
+                        <li class="lists">特性:<img src="irisskill1-1-1.png">破壞之槌-連續爆發<img src="irisskill1-1-2.png">破壞之槌-熱火朝天</li>
+                        <li class="lists">特性:<img src="irisskill1-3-1.png">俯衝突擊-粉碎<img src="irisskill1-3-2.png">俯衝突擊-放射</li>
+                        <li class="lists">特性:<img src="irisskill2-1-1.png">火焰翻滾-地獄之火</li>
+                        <li class="lists">特性:<img src="irisskill2-2-1.png">漩渦突刺-疾風</li>
+                        <li class="lists">特性:<img src="irisskill2-3-1.png">脈衝之焰-快速射擊<img src="irisskill2-3-2.png">脈衝之焰-全力射擊</li>
+                        <li class="lists">特性:<img src="irisskill3-2-1.png">子彈風暴-範圍增加<img src="irisskill3-2-2.png">子彈風暴-隕石降臨</li>
+                        <li class="lists">特性:<img src="irisskill4-2-1.png">地震-火山<img src="irisskill4-2-2.png">地震-火柱</li>
+                    </ul>
+                </div>
+                </div>
+                <div id="divri5">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/D8TW0MQNVHU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2LwQQv5rPx0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div id="irisri" class="riri">
+                       <img src="IrisSelect.png" width="97px" height="280px">
+                    </div>
+                    <div id="irisri1">
+                       <p>遊玩心得:
+                           <br>
+                           御姊角色,第一眼看到就有這種感覺,而且設計得很棒,人物設定是屬於有點暴躁的角色,技能也是十分暴力,全輸出型攻擊角色,掃圖也是一流的,武器使用的是槍炮槌,非常笨重,所以攻擊速度會顯得特別慢,需要慢慢適應;我第二支玩到滿等地就是這隻角色,當初為了跟活動特地去練的,不過這隻玩起來,會有很亮眼的輸出,只是我還沒有習慣技能的銜接。
+                       </p>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+function openlink(evt, titleName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("title");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(titleName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+function openworld(evt, worldName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("world1");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink1");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
+  }
+  document.getElementById(worldName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+function opench(evt, chName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("ch");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink2");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
+  }
+  document.getElementById(chName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+</body>
+
+</html>
